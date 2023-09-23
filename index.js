@@ -40,17 +40,6 @@ function drumPlay(buttonTExt) {
       break;
   }
 }
-/* function HouseKeeper(name, age, workPermit, language, cleaningReport) {
-  this.name = name;
-  this.age = age;
-  this.workPermit = workPermit;
-  this.language = language;
-  this.clean = function () {
-    alert("....cleaning in progress");
-  };
-}
-var houseKeeper1 = new HouseKeeper("timmy", 23, true, ["spanish", "English"]);
-console.log(houseKeeper1.language); */
 
 document.addEventListener("keypress", function (event) {
   drumPlay(event.key);
@@ -61,6 +50,6 @@ function buttonAnimation(buttonKey) {
   activeButton.classList.add("pressed");
   setTimeout(function (){
     activeButton.classList.remove("pressed");
-  }, 100);
+  }, 500);
 }
 
